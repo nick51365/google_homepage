@@ -43,7 +43,6 @@
     }
     .nav-link{
         font-family: helvetica;
-        font-size: 14px;
         text-decoration: none;
         color: black;
         margin: 10px;
@@ -54,6 +53,7 @@
         position:fixed;
         display: flex;
         justify-content: space-around;
+        font-size:14px;
         top:0px;
         left:-10px;
         padding: 20px;
@@ -61,12 +61,22 @@
     .right-nav{
         position:fixed;
         display: flex;
-        top: 0px;
-        right:0px;
-        padding: 20px;
-        font-size: 8px;
+        justify-content: flex-start;
+        align-items: center;
+        top: -5px;
+        right:-5px;
+        padding: 15px;
+        font-size: 12px;
+        margin-left: 20px;
     }
+    .apps-logo{
+        height: 23px;
+        width: 23px;
 
+    }
+    .account-logo{
+        border-radius: 50%;
+    }
 </style>
 
 <head>
@@ -88,7 +98,10 @@
     <nav class="right-nav">
         <a class="nav-link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
         <a class="nav-link" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-        <a><img href="apps-logo.png"></a>
+        <a class="nav-link" href="https://www.google.com/intl/en/about/products">
+            <img class="apps-logo" src="apps-logo.png"></a>
+        <a class="nav-link" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/">
+            <img class="account-logo" src="account-logo.png"></a>
     </nav>
 </body>
 </html>
