@@ -4,11 +4,11 @@
     .logo {
         display:block;
         margin: auto;
-        margin-top:164px;
+        margin-top:27%;
     }
     .searchbar{
         margin: auto;
-        margin-top:-10px;
+        margin-top:-12px;
         height: 40px;
         width: 580px;
         border-radius: 25px;
@@ -16,19 +16,16 @@
         border-color: transparent;
         box-shadow: 0px 0px 5px hsl(0, 0%, 80%);
         font-size: 16px;
-        background-color: white;
-
-        
+        background-color: white;     
     }
-    .wrapper{
+    .searchbar-wrapper{
         position: relative;
         margin: auto;
         display: flex;
         margin-top: 50px;
-        width: 565px;
+        width: 560px;
         align-items: center;
     }
-
     .search-icon{
         height: 14px;
         width:13px;
@@ -41,9 +38,35 @@
         width: 12px;
         background-color: transparent;
         position: absolute;
-        right: 17px;
-        top: 4px;
+        right: 22px;
+        top: 2px;
     }
+    .nav-link{
+        font-family: helvetica;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+        margin-top: 2px;
+        margin-left: 15px;
+    }
+    .left-nav{
+        position:fixed;
+        display: flex;
+        justify-content: space-around;
+        top:0px;
+        left:-10px;
+        padding: 20px;
+    }
+    .right-nav{
+        position:fixed;
+        display: flex;
+        top: 0px;
+        right:0px;
+        padding: 20px;
+        font-size: 8px;
+    }
+
 </style>
 
 <head>
@@ -53,10 +76,19 @@
     <div>    
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>  
-    <div class="wrapper">
+    <div class="searchbar-wrapper">
         <img class="search-icon"src="https://image.flaticon.com/icons/png/512/149/149852.png">
-        <input placeholder="          Search Google or type a URL"class="searchbar" type="text">
+        <input class="searchbar" type="text">
         <img class="voice-logo" src="voice-logo.png">
     </div>
+    <nav class="left-nav">
+        <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        <a class="nav-link" href=https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US>Store</a>
+    </nav>
+    <nav class="right-nav">
+        <a class="nav-link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+        <a class="nav-link" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+        <a><img href="apps-logo.png"></a>
+    </nav>
 </body>
 </html>
