@@ -23,6 +23,7 @@
         margin: auto;
         display: flex;
         margin-top: 50px;
+        margin-bottom: 25px;
         width: 560px;
         align-items: center;
     }
@@ -80,18 +81,39 @@
     .footer{
         position: fixed;
         display: flex;
+        justify-content:space-evenly;
+        align-items: flex-end;
         bottom:0px;
         left:0px;
         right:0px;
         width: 100%;
-        height: 90px;
+        height: auto;
         background-color: hsl(0, 0%, 92%);
+        
     }
     .bottom-left-footer{
         display: flex;
-        position: fixed;
         font-size:15px; 
         bottom: 5px;
+        margin: 10px;
+    }
+    .bottom-right-footer{
+        display: flex;
+        font-size: 15px;
+        bottom: 5px;
+        margin:10px;
+    }
+    .button-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        margin: 5px;
+        padding: 10px;
+        border-color: transparent;
+        border-radius: 5%;
+        background-color:hsl(0, 0%, 98%);
+        font-family: helvetica;
     }
 </style>
 
@@ -119,6 +141,15 @@
         <a class="nav-link" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/">
             <img class="account-logo" src="account-logo.png"></a>
     </nav>
+    <div class="button-wrapper">
+          <button class="button">
+          Google Search
+         </button>
+         <button class="button">
+             I'm Feeling Lucky
+         </button>
+    </div>
+
 </body>
 <footer>
     <div class="footer">
@@ -126,6 +157,11 @@
             <a class="nav-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
             <a class="nav-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
             <a class="nav-link" href=https://google.com/search/howsearchworks/?fg=1>How Search works</a>
+        </div>
+        <div class="bottom-right-footer">
+            <a class="nav-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+            <a class="nav-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+            <a class="nav-link">Settings</a>
         </div>
     </div>
 </footer>
